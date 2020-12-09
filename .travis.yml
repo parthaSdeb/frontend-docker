@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker image biuld -t partha00011/frontend-docker-travis -f Dockerfile.dev .
+  - docker image build -t partha00011/frontend-docker-travis -f Dockerfile.dev .
 
 script:
   #- docker container run partha00011/frontend-docker-travis npm run test -- --coverage
